@@ -1,0 +1,43 @@
+.homeBox {
+  display: inline-block;
+  margin: 0 auto;
+  border: none;
+  border-radius: 0;
+  text-align: center;
+  background: transparent;
+  min-width: 30vw;
+  padding: 2vh 1vw;
+  /* min-height: 30vh; */
+}
+.homeBox a {
+  padding: 1vh 5vw;
+  margin: 1vh 0.8vw;
+  border: 3px solid white;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.homeBox a:hover,
+.homeBox a:focus {
+  background-color: white;
+  color: rgb(191, 41, 111);
+}
+
+.homeBox .leader-button {
+  display: inline-block;
+  padding: 1vh 11vw;
+  margin: 2.7vh auto;
+}
+
+@media screen and (max-width: 526px) {
+  .homeBox a {
+    display: inline-block;
+    padding: 1vh 7vw;
+    margin-bottom: 0.5vh;
+  }
+  .homeBox .leader-button {
+    margin: 0.5vh auto;
+    padding: 1vh 15vw;
+  }
+}

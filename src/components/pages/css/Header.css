@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Arca Major 3";
+  src: url("./assets/arcamajora3/Webfonts/ArcaMajora3-Bold.eot"),
+    url("./assets/arcamajora3/Webfonts/ArcaMajora3-Bold.woff") format("woff"),
+    url("./assets/arcamajora3/Webfonts/ArcaMajora3-Bold.woff2") format("woff2"),
+    url("./assets/arcamajora3/Webfonts/ArcaMajora3-Heavy.eot"),
+    url("./assets/arcamajora3/Webfonts/ArcaMajora3-Heavy.woff") format("woff"),
+    url("./assets/arcamajora3/Webfonts/ArcaMajora3-Heavy.woff2") format("woff2");
+}
+nav {
+  width: 5vw;
+  margin: 0;
+  margin-top: 2vh;
+  position: fixed;
+  z-index: 1000;
+}
+nav .menu .icon {
+  position: fixed;
+  left: 2vw;
+  top: 3vh;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.head {
+  margin: 3vh auto;
+  position: relative;
+  margin-bottom: 0;
+  z-index: 50;
+  height: 30vh;
+  width: 40vw;
+  background: url("./assets/treasuro\ logo\ final.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav .menu .sidebar {
+  display: none;
+  position: fixed;
+  z-index: 1005;
+  background: rgba(191, 41, 111, 1);
+  margin: 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  font-size: 1.6em;
+  padding: 2vh 1vw;
+  width: 205px;
+  text-align: left;
+}
+
+.toggle {
+  margin-left: 10px;
+}
+
+nav .menu .sidebar .close:hover {
+  background: rgb(191, 41, 111);
+  color: white;
+}
+nav .menu .sidebar .close {
+  text-align: right;
+  position: relative;
+  left: 80%;
+  /* margin-right: auto; */
+  cursor: pointer;
+}
+
+.sidebar a,
+.sidebar > span,
+.sidebar p {
+  display: inline-block;
+  font-family: "Arca Major 3" !important;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 1vw;
+  margin-bottom: 10px;
+}
+/* .sidebar span,
+.sidebar a {
+  padding: 0 1vw;
+  margin: 0;
+  width: 100%;
+} */
+
+/* .sidebar span:hover,
+.sidebar a:hover {
+  background-color: white;
+  color: rgb(191, 41, 111);
+} */
+.sidebar .footer {
+  position: relative;
+  top: 50vh;
+  /* bottom: 0; */
+  font-size: 1rem;
+}
+.toggle {
+  width: 30vw;
+  height: 10vh;
+}
+
+.toggleContainer {
+  width: 60px;
+  height: 25px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  background: #ddd;
+  padding: 0 3px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.toggleKnob {
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  display: block;
+  border-radius: 50%;
+  line-height: 25px;
+  transition: all 0.2s ease-in;
+}
+
+.toggleKnob.isActive {
+  transform: translateX(35px);
+}
+
+.toggleContainer.isActive {
+  background: skyblue;
+}
+
+@media screen and (max-width: 526px) {
+  .head {
+    height: 20vh;
+    width: 60vw;
+  }
+
+  nav .menu .icon {
+    position: fixed;
+    top: 3vh;
+    left: 5vw;
+    z-index: 100;
+    /* margin-left: 3vw; */
+    z-index: 10;
+    margin-right: 1000px;
+  }
+}

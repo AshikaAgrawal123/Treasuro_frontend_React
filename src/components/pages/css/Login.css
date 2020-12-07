@@ -1,0 +1,39 @@
+.container {
+  border: 2px solid white;
+  border-radius: 10px;
+  background: rgba(105, 29, 57, 0.8);
+  z-index: 100;
+}
+.container h1 {
+  display: inline-block;
+  font-size: 2em;
+  /* min-width: 15vw; */
+  margin: 0 auto 2vh;
+}
+.container input {
+  margin: 1vh 2vw;
+  width: 72%;
+  height: 2vh;
+  padding: 1vh 2vw;
+  background: transparent;
+  border: 1px solid white;
+}
+
+.container input:focus {
+  outline: none;
+}
+.container input::placeholder {
+  color: white;
+}
+
+.form button {
+  color: black;
+  margin: 2vh auto;
+}
+.container a {
+  padding: 0;
+  text-decoration: underline;
+  color: white;
+  font-size: 1rem;
+  border: none;
+}

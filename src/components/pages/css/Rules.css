@@ -1,0 +1,78 @@
+.rule-box {
+  display: inline-block;
+  position: relative;
+  z-index: 100;
+  margin: 0 auto;
+  text-align: left;
+  width: 70vw;
+  padding: 2vh 1vw;
+  min-height: 30vh;
+  max-height: 60vh;
+  overflow-y: scroll;
+  border: none;
+  border-radius: 0;
+  background: rgba(105, 29, 57, 0.8);
+}
+
+.rule-box::-webkit-scrollbar {
+  width: 0.2em;
+}
+
+.rule-box::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.rule-box::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  outline: 1px solid transparent;
+}
+
+.rule-box h1 {
+  text-align: center;
+  margin-bottom: 1vh;
+}
+
+.rule-box a {
+  font-size: 1.5em;
+  display: block;
+  text-align: center;
+}
+
+.rule-box li {
+  margin: 1vh 2vw;
+  font-size: larger;
+  word-spacing: 3px;
+
+  position: relative;
+  padding-left: 1.5em;
+}
+
+li:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0.6em;
+  background: white;
+}
+
+.rule-box li:before {
+  width: 0.375em;
+  height: 0.375em;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 526px) {
+  .rule-box {
+    width: 82vw;
+    font-size: 0.8em;
+    border-radius: 5px;
+  }
+  .rule-box h1 {
+    font-size: 1.5em;
+  }
+  .rule-box ul {
+    margin-left: 0;
+  }
+}
